@@ -1,6 +1,8 @@
 
 .storage/core.config_entries
 .storage/core.restore_state
+.storage/auth
+.storage/mobile_app
 
 secrets.yaml
 known_devices.yaml
@@ -12,3 +14,7 @@ tts/*
 
 command_input
 
+*.old
+*.bak
+*.back
+*.backup
