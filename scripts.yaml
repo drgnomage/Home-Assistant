@@ -1,0 +1,99 @@
+morning_alarm:
+  alias: Morning Alarm
+  icon: hass:alarm
+  mode: single
+  sequence:
+  - data:
+      brightness_pct: 1
+      kelvin: 2500
+    entity_id: light.bedroom_lights
+    service: light.turn_on
+  - data: {}
+    service: shell_command.morning_alarm
+  - data:
+      brightness_pct: 1
+      kelvin: 2500
+    entity_id: light.bedroom_lights
+    service: light.turn_on
+  - repeat:
+      count: '100'
+      sequence:
+      - data:
+          brightness_step_pct: 1
+          kelvin: 2500
+        entity_id: light.bedroom_lights
+        service: light.turn_on
+      - delay: 00:00:09
+  - delay: 00:20:00
+  - data: {}
+    entity_id: light.bedroom_lights
+    service: light.turn_off
+  - data: {}
+    service: shell_command.morning_alarm_stop
+christmas:
+  alias: Colour Loop
+  sequence:
+  - service: lifx.effect_colorloop
+    data:
+      entity_id: light.hallway_light
+      brightness: 128
+      transition: 1
+      period: 1
+      spread: 15
+      change: 15
+      power_on: false
+  mode: single
+  icon: mdi:lightbulb
+'1608813982007':
+  alias: Christmas
+  sequence:
+  - type: turn_on
+    device_id: a45623e1c288d5e8969322483e5b06ff
+    entity_id: light.hallway_light
+    domain: light
+    brightness_pct: 50
+  - service: lifx.effect_pulse
+    data:
+      mode: solid
+      color_name: red
+      brightness_pct: 50
+      power_on: false
+    entity_id: light.hallway_light
+  - repeat:
+      until:
+      - condition: device
+        type: is_off
+        device_id: a45623e1c288d5e8969322483e5b06ff
+        entity_id: light.hallway_light
+        domain: light
+      sequence:
+      - service: lifx.effect_pulse
+        data:
+          mode: breathe
+          color_name: green
+          brightness_pct: 50
+          period: 2
+          power_on: false
+        entity_id: light.hallway_light
+  mode: single
+  icon: mdi:tree
+save_lights:
+  alias: Save Lights
+  sequence:
+  - service: scene.create
+    data:
+      scene_id: snapshot_lights
+      snapshot_entities:
+      - light.frontroom_1
+      - light.frontroom_2
+      - light.bedroomlamp_01
+      - light.bedroomlamp_02
+      - light.hallway_light
+  mode: single
+restore_lights:
+  alias: Restore Lights
+  sequence:
+  - service: scene.turn_on
+    data: {}
+    entity_id: scene.snapshot_lights
+  mode: single

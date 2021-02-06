@@ -1,0 +1,561 @@
+{
+    "version": 1,
+    "key": "lovelace.lovelace_mobile",
+    "data": {
+        "config": {
+            "views": [
+                {
+                    "theme": "midnight",
+                    "title": "Home",
+                    "path": "home",
+                    "icon": "mdi:home-outline",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "grid",
+                            "cards": [
+                                {
+                                    "type": "grid",
+                                    "columns": 2,
+                                    "cards": [
+                                        {
+                                            "type": "button",
+                                            "tap_action": {
+                                                "action": "navigate",
+                                                "navigation_path": "frontroom"
+                                            },
+                                            "entity": "light.frontroom_lights",
+                                            "show_name": false,
+                                            "show_state": true,
+                                            "hold_action": {
+                                                "action": "toggle"
+                                            },
+                                            "icon": "mdi:sofa-outline"
+                                        },
+                                        {
+                                            "type": "button",
+                                            "tap_action": {
+                                                "action": "navigate",
+                                                "navigation_path": "bedroom"
+                                            },
+                                            "entity": "light.bedroom_lights",
+                                            "show_name": false,
+                                            "show_state": true,
+                                            "hold_action": {
+                                                "action": "toggle"
+                                            },
+                                            "icon": "mdi:bed-outline"
+                                        },
+                                        {
+                                            "type": "button",
+                                            "tap_action": {
+                                                "action": "more-info"
+                                            },
+                                            "entity": "light.bedroomlamp_02",
+                                            "show_name": false,
+                                            "show_state": true,
+                                            "hold_action": {
+                                                "action": "toggle"
+                                            },
+                                            "icon": "mdi:lamp"
+                                        },
+                                        {
+                                            "type": "button",
+                                            "tap_action": {
+                                                "action": "more-info"
+                                            },
+                                            "entity": "light.hallway_light",
+                                            "show_name": false,
+                                            "show_state": true,
+                                            "hold_action": {
+                                                "action": "toggle"
+                                            },
+                                            "icon": "mdi:door"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "button",
+                                    "entity": "scene.night",
+                                    "show_state": false,
+                                    "tap_action": {
+                                        "action": "call-service",
+                                        "service": "scene.turn_on",
+                                        "service_data": {
+                                            "entity_id": "scene.night"
+                                        }
+                                    },
+                                    "icon": "mdi:star-outline",
+                                    "name": "Night"
+                                },
+                                {
+                                    "type": "grid",
+                                    "columns": 2,
+                                    "cards": [
+                                        {
+                                            "type": "button",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "scene.turn_on",
+                                                "service_data": {
+                                                    "entity_id": "scene.lights_quarter"
+                                                }
+                                            },
+                                            "entity": "scene.lights_quarter",
+                                            "show_name": true,
+                                            "show_state": false,
+                                            "icon": "mdi:lightbulb-outline",
+                                            "name": "25%"
+                                        },
+                                        {
+                                            "type": "button",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "scene.turn_on",
+                                                "service_data": {
+                                                    "entity_id": "scene.lights_half"
+                                                }
+                                            },
+                                            "entity": "scene.lights_half",
+                                            "icon": "mdi:lightbulb-outline",
+                                            "name": "50%"
+                                        },
+                                        {
+                                            "type": "button",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "scene.turn_on",
+                                                "service_data": {
+                                                    "entity_id": "scene.movie_mode"
+                                                }
+                                            },
+                                            "entity": "scene.movie_mode",
+                                            "name": "Movie",
+                                            "icon": "mdi:lightbulb-outline"
+                                        },
+                                        {
+                                            "type": "button",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "scene.turn_on",
+                                                "service_data": {
+                                                    "entity_id": "scene.bedtime"
+                                                }
+                                            },
+                                            "entity": "scene.bedtime",
+                                            "icon": "mdi:sleep",
+                                            "name": "Bed"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "elements": [
+                                {
+                                    "entity": "switch.sonoff1",
+                                    "style": {
+                                        "left": "28%",
+                                        "top": "20%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "switch.tv",
+                                    "style": {
+                                        "left": "36.5%",
+                                        "top": "88%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "switch.monitoring",
+                                    "style": {
+                                        "left": "69.5%",
+                                        "top": "54%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "switch.spare",
+                                    "style": {
+                                        "left": "30%",
+                                        "top": "88%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "switch.desk",
+                                    "style": {
+                                        "left": "88%",
+                                        "top": "12%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "input_boolean.alarm_system",
+                                    "style": {
+                                        "left": "80%",
+                                        "top": "12%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "light.bedroomlamp_02",
+                                    "style": {
+                                        "left": "34%",
+                                        "top": "20%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "light.hallway_light",
+                                    "style": {
+                                        "left": "86%",
+                                        "top": "65.5%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "light.frontroom_lights",
+                                    "style": {
+                                        "left": "70%",
+                                        "top": "18%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "light.bedroom_lights",
+                                    "style": {
+                                        "left": "43%",
+                                        "top": "70%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "service": "scene.turn_on",
+                                    "service_data": {
+                                        "entity_id": "scene.movie_mode"
+                                    },
+                                    "style": {
+                                        "left": "12%",
+                                        "top": "32%"
+                                    },
+                                    "title": "Movie Mode",
+                                    "type": "service-button"
+                                },
+                                {
+                                    "service": "scene.turn_on",
+                                    "service_data": {
+                                        "entity_id": "scene.lights_quarter"
+                                    },
+                                    "style": {
+                                        "left": "12%",
+                                        "top": "40%"
+                                    },
+                                    "title": "Lights 25%",
+                                    "type": "service-button"
+                                },
+                                {
+                                    "service": "scene.turn_on",
+                                    "service_data": {
+                                        "entity_id": "scene.lights_half"
+                                    },
+                                    "style": {
+                                        "left": "12%",
+                                        "top": "48%"
+                                    },
+                                    "title": "Lights 50%",
+                                    "type": "service-button"
+                                },
+                                {
+                                    "service": "scene.turn_on",
+                                    "service_data": {
+                                        "entity_id": "scene.bedtime"
+                                    },
+                                    "style": {
+                                        "left": "12%",
+                                        "top": "56%"
+                                    },
+                                    "title": "Bed Time",
+                                    "type": "service-button"
+                                },
+                                {
+                                    "service": "scene.turn_on",
+                                    "service_data": {
+                                        "entity_id": "scene.night"
+                                    },
+                                    "style": {
+                                        "left": "12%",
+                                        "top": "64%"
+                                    },
+                                    "title": "Night Time",
+                                    "type": "service-button"
+                                }
+                            ],
+                            "image": "/local/floorplan_slate.png",
+                            "type": "picture-elements"
+                        }
+                    ]
+                },
+                {
+                    "icon": "mdi:lightbulb-outline",
+                    "title": "Lights",
+                    "path": "lights",
+                    "theme": "midnight",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "markdown",
+                            "content": "## Frontroom"
+                        },
+                        {
+                            "type": "grid",
+                            "square": false,
+                            "cards": [
+                                {
+                                    "type": "button",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "entity": "light.frontroom_1"
+                                },
+                                {
+                                    "type": "button",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "entity": "light.frontroom_2"
+                                },
+                                {
+                                    "type": "button",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "entity": "light.bedroomlamp_02"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "markdown",
+                            "content": "## Bedroom & Hallway"
+                        },
+                        {
+                            "type": "grid",
+                            "columns": 2,
+                            "square": false,
+                            "cards": [
+                                {
+                                    "type": "button",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "entity": "light.bedroomlamp_01",
+                                    "show_name": true
+                                },
+                                {
+                                    "type": "button",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "entity": "light.hallway_light",
+                                    "name": "Hallway",
+                                    "icon": "mdi:lightbulb-outline"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "markdown",
+                            "content": "## Groups"
+                        },
+                        {
+                            "type": "grid",
+                            "columns": 2,
+                            "square": false,
+                            "cards": [
+                                {
+                                    "type": "light",
+                                    "entity": "light.frontroom_lights"
+                                },
+                                {
+                                    "type": "light",
+                                    "entity": "light.bedroom_lights"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Frontroom",
+                    "path": "frontroom",
+                    "icon": "mdi:sofa-outline",
+                    "theme": "midnight",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "media-control",
+                            "entity": "media_player.kodi_2"
+                        },
+                        {
+                            "type": "grid",
+                            "columns": 4,
+                            "cards": [
+                                {
+                                    "type": "button",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "entity": "light.frontroom_1"
+                                },
+                                {
+                                    "type": "button",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "entity": "light.frontroom_2"
+                                },
+                                {
+                                    "type": "button",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "entity": "light.bedroomlamp_02"
+                                },
+                                {
+                                    "type": "button",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "entity": "switch.sonoff1"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "picture-entity",
+                            "entity": "camera.frontroom_cam",
+                            "camera_view": "live",
+                            "aspect_ratio": "16:9",
+                            "show_state": false,
+                            "show_name": false
+                        }
+                    ]
+                },
+                {
+                    "title": "Bedroom",
+                    "path": "bedroom",
+                    "icon": "mdi:bed-outline",
+                    "theme": "midnight",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "grid",
+                            "columns": 2,
+                            "cards": [
+                                {
+                                    "type": "button",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "entity": "light.bedroomlamp_01",
+                                    "show_name": true,
+                                    "icon": "mdi:lightbulb-outline"
+                                },
+                                {
+                                    "type": "button",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "entity": "switch.spare",
+                                    "show_name": true,
+                                    "name": "Electric Blanket"
+                                },
+                                {
+                                    "type": "button",
+                                    "tap_action": {
+                                        "action": "call-service",
+                                        "service": "scene.turn_on",
+                                        "service_data": {
+                                            "entity_id": "scene.bedtime"
+                                        }
+                                    },
+                                    "entity": "scene.bedtime",
+                                    "icon": "mdi:sleep",
+                                    "show_name": true
+                                },
+                                {
+                                    "type": "button",
+                                    "tap_action": {
+                                        "action": "call-service",
+                                        "service": "scene.turn_on",
+                                        "service_data": {
+                                            "entity_id": "scene.night"
+                                        }
+                                    },
+                                    "entity": "scene.night",
+                                    "show_name": true,
+                                    "icon": "mdi:star-outline"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Washing",
+                    "path": "washing",
+                    "icon": "mdi:washing-machine",
+                    "theme": "midnight",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "switch.monitoring"
+                                }
+                            ],
+                            "state_color": true,
+                            "footer": {
+                                "type": "graph",
+                                "entity": "sensor.monitoring_watts",
+                                "hours_to_show": 2,
+                                "detail": 2
+                            },
+                            "show_header_toggle": false,
+                            "title": "Washing"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

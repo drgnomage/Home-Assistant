@@ -1,0 +1,71 @@
+{
+    "version": 1,
+    "key": "zone",
+    "data": {
+        "items": [
+            {
+                "icon": "mdi:map-marker",
+                "id": "work",
+                "latitude": 51.31081818799332,
+                "longitude": -0.33436954021453863,
+                "name": "Work",
+                "passive": false,
+                "radius": 50.0
+            },
+            {
+                "icon": "mdi:map-marker",
+                "id": "mums",
+                "latitude": 51.316002054335534,
+                "longitude": -0.311763882637024,
+                "name": "Mums",
+                "passive": false,
+                "radius": 40.0
+            },
+            {
+                "icon": "mdi:map-marker",
+                "id": "richards",
+                "latitude": 51.302466,
+                "longitude": -0.330568,
+                "name": "Richards",
+                "passive": false,
+                "radius": 40.0
+            },
+            {
+                "icon": "mdi:map-marker",
+                "id": "stefans",
+                "latitude": 51.28917777323255,
+                "longitude": -0.3177505731582642,
+                "name": "Stefans",
+                "passive": false,
+                "radius": 40.0
+            },
+            {
+                "icon": "mdi:map-marker",
+                "id": "dales",
+                "latitude": 51.26380807472325,
+                "longitude": -0.5818945169448854,
+                "name": "Dales",
+                "passive": false,
+                "radius": 50.0
+            },
+            {
+                "icon": "mdi:map-marker",
+                "id": "odeon",
+                "latitude": 51.334090700813114,
+                "longitude": -0.2622449398040772,
+                "name": "Odeon",
+                "passive": false,
+                "radius": 70.0
+            },
+            {
+                "icon": "mdi:map-marker",
+                "id": "blacks",
+                "latitude": 51.334197950972666,
+                "longitude": -0.26714265346527105,
+                "name": "Blacks",
+                "passive": false,
+                "radius": 40.0
+            }
+        ]
+    }
+}

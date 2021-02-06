@@ -1,0 +1,5 @@
+switch.sonoff1:
+  friendly_name: Treadmill
+  icon: mdi:run
+switch.oppenheimer:
+  icon: mdi:monitor

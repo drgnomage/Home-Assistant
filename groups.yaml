@@ -1,0 +1,22 @@
+  alarmclock:
+    name: Wake Me Up
+    entities: 
+      - sensor.alarm_time
+      - input_slider.alarmhour
+      - input_slider.alarmminutes
+      - input_boolean.alarmstatus
+      - input_boolean.alarmweekday
+
+  on_kindle:
+    name: Kindle Entities
+    entities:
+      - switch.spare
+      - switch.tv
+      - switch.transmission_turtle_mode
+      - scene.lights_quarter
+      - scene.lights_half
+      - scene.lights_full
+      - scene.movie_mode
+      - scene.bedtime
+      - scene.night
+

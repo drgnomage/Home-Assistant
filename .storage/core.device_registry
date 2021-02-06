@@ -1,0 +1,431 @@
+{
+    "version": 1,
+    "key": "core.device_registry",
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "ecb98ca7f9844a2e9f69e738d53a25aa"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b0:4e:26:63:e9:f0"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "TP-Link",
+                "model": "HS100(UK)",
+                "name": "TV",
+                "sw_version": "1.2.5 Build 171213 Rel.101014",
+                "entry_type": null,
+                "id": "aaa4ccc5aeb245859b725a48911662f9",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "ecb98ca7f9844a2e9f69e738d53a25aa"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b0:be:76:69:55:df"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "TP-Link",
+                "model": "HS100(UK)",
+                "name": "Desk",
+                "sw_version": "1.5.10 Build 191125 Rel.094314",
+                "entry_type": null,
+                "id": "d2b0c0d6ae0e4c72b95724093b81c6cf",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "ecb98ca7f9844a2e9f69e738d53a25aa"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b0:be:76:69:4f:96"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "TP-Link",
+                "model": "HS100(UK)",
+                "name": "Spare",
+                "sw_version": "1.5.10 Build 191125 Rel.094314",
+                "entry_type": null,
+                "id": "c8b019f6b08b455880255ee3c6b26c68",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "ecb98ca7f9844a2e9f69e738d53a25aa"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "50:d4:f7:35:80:dd"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "TP-Link",
+                "model": "HS110(UK)",
+                "name": "MonitoringTV",
+                "sw_version": "1.5.10 Build 191125 Rel.094314",
+                "entry_type": null,
+                "id": "6d8e0e449f874e598da7bba787d28b2d",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "ecb98ca7f9844a2e9f69e738d53a25aa"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "ac:84:c6:81:98:32"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "TP-Link",
+                "model": "LB100(EU)",
+                "name": "Frontroom-2",
+                "sw_version": "1.8.11 Build 191113 Rel.105336",
+                "entry_type": null,
+                "id": "3056dd185aeb47339e2cf680a9ff1452",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "ecb98ca7f9844a2e9f69e738d53a25aa"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "ac:84:c6:81:91:32"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "TP-Link",
+                "model": "LB100(EU)",
+                "name": "Frontroom-1",
+                "sw_version": "1.8.11 Build 191113 Rel.105336",
+                "entry_type": null,
+                "id": "028e0e4eb8a242339894128417c45c99",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "ecb98ca7f9844a2e9f69e738d53a25aa"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "cc:32:e5:73:19:93"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "TP-Link",
+                "model": "KL130(EU)",
+                "name": "BedroomLamp-01",
+                "sw_version": "1.8.11 Build 191113 Rel.105336",
+                "entry_type": null,
+                "id": "a43509cc16df4909ae224f4ad65a0b76",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "ecb98ca7f9844a2e9f69e738d53a25aa"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "74:da:88:a2:4b:e9"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "TP-Link",
+                "model": "KL130(EU)",
+                "name": "BedroomLamp-02",
+                "sw_version": "1.8.11 Build 191113 Rel.105336",
+                "entry_type": null,
+                "id": "86172ed0a7df4ecd94d53a815131a096",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "312526847d0a4984ac68731823973e4d"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "429a445243e9e659"
+                    ]
+                ],
+                "manufacturer": "LGE",
+                "model": "Nexus 5X",
+                "name": "Nexus 5X",
+                "sw_version": "27",
+                "entry_type": null,
+                "id": "08f3706833e04efc87f24bf3c138db07",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "46eb4c334f2244bdba2ef18971e15d5b"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "dba6abf268077fc6"
+                    ]
+                ],
+                "manufacturer": "OnePlus",
+                "model": "ONE A2003",
+                "name": "ONE A2003",
+                "sw_version": "29",
+                "entry_type": null,
+                "id": "4bacb90613a246d1a971f7945fcc0a71",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "d74f08fe113f11eb98390d05760b8b21"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "firmata",
+                        "serial-/dev/ttyACM0"
+                    ]
+                ],
+                "manufacturer": "Firmata",
+                "model": null,
+                "name": "serial-/dev/ttyACM0",
+                "sw_version": "2.5 StandardFirmata.ino",
+                "entry_type": null,
+                "id": "d9b89175113f11eb9ced752a3e41d7f0",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "b431a78d5e1b4c6e9647d6df04ddbbc3"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "met"
+                    ]
+                ],
+                "manufacturer": "Met.no",
+                "model": "Forecast",
+                "name": "Forecast",
+                "sw_version": null,
+                "entry_type": "service",
+                "id": "fa31231585ca33d1885f38d42d56c8a1",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "df3481e45104295b087b6db27ac16248"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "kodi",
+                        "646e55a2-51ce-40c0-8b53-185e20839f96"
+                    ]
+                ],
+                "manufacturer": "Kodi",
+                "model": null,
+                "name": "kodi",
+                "sw_version": "18.9",
+                "entry_type": null,
+                "id": "de2e15c6b2c2b1c7e8542e1b4b77fa7d",
+                "via_device_id": null,
+                "area_id": "cea608e6b90c452b856f4e1c97ad34c3",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "ef11f8aba230cc9b1f9223702c82090e"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "kodi",
+                        "d727c56b-d800-4724-a884-2ed81f194eb6"
+                    ]
+                ],
+                "manufacturer": "Kodi",
+                "model": null,
+                "name": "kodi",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "187a6ed05f97ae13521f69f8344312e2",
+                "via_device_id": null,
+                "area_id": "cea608e6b90c452b856f4e1c97ad34c3",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "4a85387eb7f0ce9110d382039566f634"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "d0:73:d5:26:87:e7"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "lifx",
+                        "d0:73:d5:26:87:e7"
+                    ]
+                ],
+                "manufacturer": "LIFX",
+                "model": "LIFX A19",
+                "name": "Hallway Light",
+                "sw_version": 2.76,
+                "entry_type": null,
+                "id": "a45623e1c288d5e8969322483e5b06ff",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "44f95a42d1823676c501acf4cabce853"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "ovo_energy",
+                        "7458820"
+                    ]
+                ],
+                "manufacturer": "OVO Energy",
+                "model": null,
+                "name": "joshfowler@protonmail.com",
+                "sw_version": null,
+                "entry_type": "service",
+                "id": "01a518b5370760f0681ecb72c9a94dbc",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "b7a33abe349addafc9cbe7a3fb9e2a90"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "pi_hole",
+                        "b7a33abe349addafc9cbe7a3fb9e2a90"
+                    ]
+                ],
+                "manufacturer": "Pi-hole",
+                "model": null,
+                "name": "Pi-Hole",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "fee201aef627bf823e7c5b299b8ed1e0",
+                "via_device_id": null,
+                "area_id": "cea608e6b90c452b856f4e1c97ad34c3",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "5fe84f079858e0eb8549105ed256ac01"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "pi_hole",
+                        "5fe84f079858e0eb8549105ed256ac01"
+                    ]
+                ],
+                "manufacturer": "Pi-hole",
+                "model": null,
+                "name": "Pi Hole",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "a0e990008fa98158fecb2513839ebe32",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "efd7dc9e53dc47c32374f8c3ecf007d0"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "c8:2b:96:43:42:9e"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Tasmota",
+                "model": "Sonoff Bridge",
+                "name": "RFBridge",
+                "sw_version": "9.2.0",
+                "entry_type": null,
+                "id": "999277be273f83c117693be87e716bc5",
+                "via_device_id": null,
+                "area_id": "cea608e6b90c452b856f4e1c97ad34c3",
+                "name_by_user": null,
+                "disabled_by": null
+            }
+        ],
+        "deleted_devices": []
+    }
+}

@@ -1,0 +1,3 @@
+[submodule "kindle"]
+	path = kindle
+	url = https://github.com/hermannsblum/kindle_infoscreen.git

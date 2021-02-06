@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "key": "input_boolean",
+    "data": {
+        "items": [
+            {
+                "name": "Alarm System",
+                "icon": "mdi:alarm",
+                "id": "alarm_system"
+            }
+        ]
+    }
+}

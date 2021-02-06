@@ -1,0 +1,228 @@
+- id: '1589439132622'
+  name: Bedtime
+  entities:
+    light.bedroomlamp_01:
+      min_mireds: 111
+      max_mireds: 400
+      brightness: 23
+      hs_color:
+      - 315
+      - 100
+      rgb_color:
+      - 255
+      - 0
+      - 191
+      xy_color:
+      - 0.477
+      - 0.196
+      current_power_w: '1.7'
+      daily_energy_kwh: '0.011'
+      monthly_energy_kwh: '0.056'
+      friendly_name: Bedroom
+      icon: mdi:lightbulb-outline
+      supported_features: 19
+      state: 'on'
+    light.frontroom_1:
+      current_power_w: '3.9'
+      daily_energy_kwh: '0.033'
+      monthly_energy_kwh: '0.221'
+      friendly_name: Frontroom
+      icon: mdi:lightbulb-outline
+      supported_features: 1
+      state: 'off'
+    light.frontroom_2:
+      current_power_w: '3.9'
+      daily_energy_kwh: '0.033'
+      monthly_energy_kwh: '0.202'
+      friendly_name: Desk Light
+      icon: mdi:lightbulb-outline
+      supported_features: 1
+      state: 'off'
+    switch.spare:
+      friendly_name: Electric Blanket
+      icon: mdi:bed-outline
+      state: 'on'
+    switch.tv:
+      friendly_name: LEDs
+      icon: mdi:lightbulb-outline
+      state: 'on'
+- id: '1589439262822'
+  name: Nighttime
+  entities:
+    light.bedroomlamp_01:
+      min_mireds: 111
+      max_mireds: 400
+      current_power_w: '0.0'
+      daily_energy_kwh: '0.011'
+      monthly_energy_kwh: '0.056'
+      friendly_name: Bedroom
+      icon: mdi:lightbulb-outline
+      supported_features: 19
+      state: 'off'
+    light.bedroomlamp_02:
+      min_mireds: 111
+      max_mireds: 400
+      current_power_w: '0.0'
+      daily_energy_kwh: '0.000'
+      monthly_energy_kwh: '0.045'
+      friendly_name: Lamp
+      icon: mdi:lamp
+      supported_features: 19
+      state: 'off'
+    light.frontroom_1:
+      current_power_w: '3.9'
+      daily_energy_kwh: '0.033'
+      monthly_energy_kwh: '0.221'
+      friendly_name: Frontroom
+      icon: mdi:lightbulb-outline
+      supported_features: 1
+      state: 'off'
+    light.frontroom_2:
+      current_power_w: '3.9'
+      daily_energy_kwh: '0.033'
+      monthly_energy_kwh: '0.202'
+      friendly_name: Desk Light
+      icon: mdi:lightbulb-outline
+      supported_features: 1
+      state: 'off'
+    switch.spare:
+      friendly_name: Electric Blanket
+      icon: mdi:bed-outline
+      state: 'off'
+    switch.tv:
+      friendly_name: LEDs
+      icon: mdi:lightbulb-outline
+      state: 'off'
+- id: '1589439760935'
+  name: Movie Mode
+  entities:
+    light.bedroomlamp_01:
+      current_power_w: '0.0'
+      daily_energy_kwh: '0.005'
+      friendly_name: BedroomLamp-01
+      max_mireds: 400
+      min_mireds: 111
+      monthly_energy_kwh: '0.087'
+      state: 'off'
+      supported_features: 19
+    light.bedroomlamp_02:
+      current_power_w: '0.0'
+      daily_energy_kwh: '0.000'
+      friendly_name: BedroomLamp-02
+      max_mireds: 400
+      min_mireds: 111
+      monthly_energy_kwh: '0.000'
+      state: 'off'
+      supported_features: 19
+    light.frontroom_1:
+      brightness: 10.2
+      current_power_w: '1.1'
+      daily_energy_kwh: '0.000'
+      friendly_name: Frontroom-1
+      monthly_energy_kwh: '0.513'
+      state: 'on'
+      supported_features: 1
+    light.frontroom_2:
+      brightness: 2.55
+      current_power_w: '0.9'
+      daily_energy_kwh: '0.000'
+      friendly_name: Frontroom-2
+      monthly_energy_kwh: '0.570'
+      state: 'on'
+      supported_features: 1
+- id: '1589440103195'
+  name: Lights Full
+  entities:
+    light.frontroom_1:
+      brightness: 255
+      current_power_w: '8.0'
+      daily_energy_kwh: '0.000'
+      friendly_name: Frontroom-1
+      monthly_energy_kwh: '0.513'
+      state: 'on'
+      supported_features: 1
+    light.frontroom_2:
+      brightness: 255
+      current_power_w: '8.0'
+      daily_energy_kwh: '0.000'
+      friendly_name: Frontroom-2
+      monthly_energy_kwh: '0.570'
+      state: 'on'
+      supported_features: 1
+- id: '1589440164186'
+  name: Lights Half
+  entities:
+    light.frontroom_1:
+      brightness: 109.65
+      current_power_w: '3.9'
+      daily_energy_kwh: '0.000'
+      friendly_name: Frontroom-1
+      monthly_energy_kwh: '0.513'
+      state: 'on'
+      supported_features: 1
+    light.frontroom_2:
+      brightness: 109.65
+      current_power_w: '3.9'
+      daily_energy_kwh: '0.000'
+      friendly_name: Frontroom-2
+      monthly_energy_kwh: '0.570'
+      state: 'on'
+      supported_features: 1
+- id: '1589440217647'
+  name: Lights Quarter
+  entities:
+    light.frontroom_1:
+      brightness: 48.45
+      current_power_w: '2.2'
+      daily_energy_kwh: '0.000'
+      friendly_name: Frontroom-1
+      monthly_energy_kwh: '0.513'
+      state: 'on'
+      supported_features: 1
+    light.frontroom_2:
+      brightness: 51
+      current_power_w: '2.2'
+      daily_energy_kwh: '0.000'
+      friendly_name: Frontroom-2
+      monthly_energy_kwh: '0.570'
+      state: 'on'
+      supported_features: 1
+- id: '1604075797827'
+  name: 'Twitch '
+  entities:
+    light.bedroomlamp_02:
+      min_mireds: 111
+      max_mireds: 400
+      brightness: 199
+      color_temp: 273
+      hs_color:
+      - 300
+      - 0
+      rgb_color:
+      - 255
+      - 255
+      - 255
+      xy_color:
+      - 0.323
+      - 0.329
+      current_power_w: '8.6'
+      daily_energy_kwh: '0.001'
+      monthly_energy_kwh: '0.071'
+      friendly_name: Lamp
+      supported_features: 19
+      state: 'on'
+    light.frontroom_1:
+      current_power_w: '0.0'
+      daily_energy_kwh: '0.003'
+      monthly_energy_kwh: '0.675'
+      friendly_name: Frontroom
+      supported_features: 1
+      state: 'off'
+    light.frontroom_2:
+      brightness: 15
+      current_power_w: '2.2'
+      daily_energy_kwh: '0.003'
+      monthly_energy_kwh: '0.794'
+      friendly_name: Desk Light
+      supported_features: 1
+      state: 'on'

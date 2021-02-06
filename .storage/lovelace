@@ -1,0 +1,756 @@
+{
+    "version": 1,
+    "key": "lovelace",
+    "data": {
+        "config": {
+            "title": "Home",
+            "views": [
+                {
+                    "path": "default_view",
+                    "title": "Home",
+                    "icon": "mdi:home-outline",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entity": "input_datetime.next_alarm_oneplustwo",
+                            "icon": "hass:clock",
+                            "name": "Alarm",
+                            "type": "entity"
+                        },
+                        {
+                            "entity": "weather.home",
+                            "type": "weather-forecast"
+                        },
+                        {
+                            "elements": [
+                                {
+                                    "entity": "switch.sonoff1",
+                                    "style": {
+                                        "left": "28%",
+                                        "top": "20%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "switch.tv",
+                                    "style": {
+                                        "left": "36.5%",
+                                        "top": "88%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "switch.monitoring",
+                                    "style": {
+                                        "left": "69.5%",
+                                        "top": "54%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "switch.spare",
+                                    "style": {
+                                        "left": "30%",
+                                        "top": "88%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "switch.desk",
+                                    "style": {
+                                        "left": "88%",
+                                        "top": "12%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "input_boolean.alarm_system",
+                                    "style": {
+                                        "left": "80%",
+                                        "top": "12%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "light.bedroomlamp_02",
+                                    "style": {
+                                        "left": "34%",
+                                        "top": "20%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "light.hallway_light",
+                                    "style": {
+                                        "left": "86%",
+                                        "top": "65.5%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "light.frontroom_lights",
+                                    "style": {
+                                        "left": "70%",
+                                        "top": "18%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "light.bedroom_lights",
+                                    "style": {
+                                        "left": "43%",
+                                        "top": "70%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "service": "scene.turn_on",
+                                    "service_data": {
+                                        "entity_id": "scene.movie_mode"
+                                    },
+                                    "style": {
+                                        "left": "12%",
+                                        "top": "32%"
+                                    },
+                                    "title": "Movie Mode",
+                                    "type": "service-button"
+                                },
+                                {
+                                    "service": "scene.turn_on",
+                                    "service_data": {
+                                        "entity_id": "scene.lights_quarter"
+                                    },
+                                    "style": {
+                                        "left": "12%",
+                                        "top": "40%"
+                                    },
+                                    "title": "Lights 25%",
+                                    "type": "service-button"
+                                },
+                                {
+                                    "service": "scene.turn_on",
+                                    "service_data": {
+                                        "entity_id": "scene.lights_half"
+                                    },
+                                    "style": {
+                                        "left": "12%",
+                                        "top": "48%"
+                                    },
+                                    "title": "Lights 50%",
+                                    "type": "service-button"
+                                },
+                                {
+                                    "service": "scene.turn_on",
+                                    "service_data": {
+                                        "entity_id": "scene.bedtime"
+                                    },
+                                    "style": {
+                                        "left": "12%",
+                                        "top": "56%"
+                                    },
+                                    "title": "Bed Time",
+                                    "type": "service-button"
+                                },
+                                {
+                                    "service": "scene.turn_on",
+                                    "service_data": {
+                                        "entity_id": "scene.night"
+                                    },
+                                    "style": {
+                                        "left": "12%",
+                                        "top": "64%"
+                                    },
+                                    "title": "Night Time",
+                                    "type": "service-button"
+                                }
+                            ],
+                            "image": "/local/floorplan_slate.png",
+                            "type": "picture-elements"
+                        },
+                        {
+                            "cards": [
+                                {
+                                    "entity": "light.frontroom_lights",
+                                    "type": "light"
+                                },
+                                {
+                                    "entity": "light.bedroom_lights",
+                                    "type": "light"
+                                }
+                            ],
+                            "type": "horizontal-stack"
+                        },
+                        {
+                            "type": "media-control",
+                            "entity": "media_player.kodi_2"
+                        }
+                    ]
+                },
+                {
+                    "path": "switches",
+                    "title": "Switches",
+                    "visible": [
+                        {
+                            "user": "9673c8154e4a42279a49df72fc4b776e"
+                        }
+                    ],
+                    "icon": "mdi:flash-outline",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "cards": [
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "switch.desk"
+                                        },
+                                        {
+                                            "entity": "switch.spare"
+                                        },
+                                        {
+                                            "entity": "switch.monitoring"
+                                        },
+                                        {
+                                            "entity": "switch.tv"
+                                        },
+                                        {
+                                            "entity": "switch.sonoff1"
+                                        },
+                                        {
+                                            "entity": "switch.oppenheimer"
+                                        }
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Switches",
+                                    "type": "entities"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "light.frontroom_1"
+                                        },
+                                        {
+                                            "entity": "light.frontroom_2"
+                                        },
+                                        {
+                                            "entity": "light.bedroomlamp_01"
+                                        },
+                                        {
+                                            "entity": "light.bedroomlamp_02"
+                                        },
+                                        {
+                                            "entity": "light.hallway_light"
+                                        }
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Lights",
+                                    "type": "entities"
+                                }
+                            ],
+                            "type": "horizontal-stack"
+                        },
+                        {
+                            "cards": [
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "switch.alarm"
+                                        },
+                                        {
+                                            "entity": "switch.board_light"
+                                        }
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Arduino",
+                                    "type": "entities"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "switch.transmission_switch"
+                                        },
+                                        {
+                                            "entity": "switch.transmission_turtle_mode"
+                                        }
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Transmission",
+                                    "type": "entities"
+                                }
+                            ],
+                            "type": "horizontal-stack"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "input_boolean.pi_radio"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Pi Radio",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "scene.lights_full"
+                                },
+                                {
+                                    "entity": "scene.lights_half"
+                                },
+                                {
+                                    "entity": "scene.lights_quarter"
+                                },
+                                {
+                                    "entity": "scene.movie_mode"
+                                },
+                                {
+                                    "entity": "scene.bedtime"
+                                },
+                                {
+                                    "entity": "scene.night"
+                                },
+                                {
+                                    "entity": "scene.twitch"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Scene Selector",
+                            "type": "entities"
+                        }
+                    ]
+                },
+                {
+                    "panel": false,
+                    "path": "lists",
+                    "title": "Lists",
+                    "visible": [
+                        {
+                            "user": "9673c8154e4a42279a49df72fc4b776e"
+                        }
+                    ],
+                    "icon": "mdi:note-outline",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "title": "Shopping",
+                            "type": "shopping-list"
+                        }
+                    ]
+                },
+                {
+                    "path": "cameras",
+                    "title": "Cameras",
+                    "visible": [
+                        {
+                            "user": "9673c8154e4a42279a49df72fc4b776e"
+                        }
+                    ],
+                    "icon": "mdi:camera-outline",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "cards": [
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "binary_sensor.frontroom_cam_motion"
+                                        },
+                                        {
+                                            "entity": "binary_sensor.frontroom_cam_noise"
+                                        },
+                                        {
+                                            "entity": "camera.frontroom_cam"
+                                        }
+                                    ],
+                                    "title": "Frontroom Camera",
+                                    "type": "entities"
+                                },
+                                {
+                                    "aspect_ratio": "50%",
+                                    "camera_view": "live",
+                                    "entity": "camera.frontroom_cam",
+                                    "type": "picture-entity"
+                                }
+                            ],
+                            "type": "vertical-stack"
+                        }
+                    ]
+                },
+                {
+                    "panel": true,
+                    "path": "map",
+                    "title": "Map",
+                    "visible": [
+                        {
+                            "user": "9673c8154e4a42279a49df72fc4b776e"
+                        }
+                    ],
+                    "icon": "mdi:map-outline",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "aspect_ratio": "1:2",
+                            "dark_mode": true,
+                            "default_zoom": 16,
+                            "entities": [
+                                {
+                                    "entity": "person.josh"
+                                },
+                                {
+                                    "entity": "zone.blacks"
+                                },
+                                {
+                                    "entity": "zone.dales"
+                                },
+                                {
+                                    "entity": "zone.home"
+                                },
+                                {
+                                    "entity": "zone.mums"
+                                },
+                                {
+                                    "entity": "zone.odeon"
+                                },
+                                {
+                                    "entity": "zone.richards"
+                                },
+                                {
+                                    "entity": "zone.stefans"
+                                },
+                                {
+                                    "entity": "zone.work"
+                                }
+                            ],
+                            "geo_location_sources": [
+                                "wwlln"
+                            ],
+                            "hours_to_show": 168,
+                            "type": "map"
+                        }
+                    ]
+                },
+                {
+                    "title": "Node Red",
+                    "path": "node-red",
+                    "panel": true,
+                    "visible": [
+                        {
+                            "user": "9673c8154e4a42279a49df72fc4b776e"
+                        }
+                    ],
+                    "icon": "mdi:sitemap",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "iframe",
+                            "aspect_ratio": "50%",
+                            "url": "https://node-red.glitchbusters.info"
+                        }
+                    ]
+                },
+                {
+                    "panel": true,
+                    "path": "tranmission",
+                    "title": "Transmission",
+                    "visible": [
+                        {
+                            "user": "9673c8154e4a42279a49df72fc4b776e"
+                        }
+                    ],
+                    "icon": "mdi:download-outline",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "aspect_ratio": "50%",
+                            "type": "iframe",
+                            "url": "https://rpi-docker.glitchbusters.info/transmission/web/"
+                        }
+                    ]
+                },
+                {
+                    "panel": true,
+                    "path": "netdata",
+                    "title": "Netdata",
+                    "visible": [
+                        {
+                            "user": "9673c8154e4a42279a49df72fc4b776e"
+                        }
+                    ],
+                    "icon": "mdi:network-outline",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "aspect_ratio": "100%",
+                            "type": "iframe",
+                            "url": "https://rpi-docker.glitchbusters.info/netdata/"
+                        }
+                    ]
+                },
+                {
+                    "panel": true,
+                    "path": "ubooquity",
+                    "title": "Ubooquity",
+                    "visible": [
+                        {
+                            "user": "9673c8154e4a42279a49df72fc4b776e"
+                        }
+                    ],
+                    "icon": "mdi:book-outline",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "aspect_ratio": "100%",
+                            "type": "iframe",
+                            "url": "https://rpi-docker.glitchbusters.info/ubooquity/"
+                        }
+                    ]
+                },
+                {
+                    "title": "Phone",
+                    "path": "phone",
+                    "visible": [
+                        {
+                            "user": "9673c8154e4a42279a49df72fc4b776e"
+                        }
+                    ],
+                    "panel": true,
+                    "icon": "mdi:phone-outline",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "device_tracker.one_a2003",
+                                "sensor.one_a2003_audio_mode",
+                                "sensor.one_a2003_audio_sensor",
+                                "sensor.one_a2003_battery_health",
+                                "sensor.one_a2003_bluetooth_connection",
+                                "binary_sensor.one_a2003_bluetooth_state",
+                                "sensor.one_a2003_charger_type",
+                                "sensor.one_a2003_detected_activity",
+                                "sensor.one_a2003_do_not_disturb_sensor",
+                                "binary_sensor.one_a2003_doze_mode",
+                                "sensor.one_a2003_external_storage",
+                                "sensor.one_a2003_geocoded_location",
+                                "binary_sensor.one_a2003_headphones",
+                                "binary_sensor.one_a2003_interactive",
+                                "binary_sensor.one_a2003_is_charging",
+                                "sensor.one_a2003_last_reboot",
+                                "sensor.one_a2003_light_sensor",
+                                "binary_sensor.one_a2003_mic_muted",
+                                "binary_sensor.one_a2003_music_active",
+                                "sensor.one_a2003_next_alarm",
+                                "sensor.one_a2003_phone_state",
+                                "binary_sensor.one_a2003_power_save",
+                                "sensor.one_a2003_proximity_sensor",
+                                "sensor.one_a2003_sim_1",
+                                "sensor.one_a2003_sim_2",
+                                "binary_sensor.one_a2003_speakerphone",
+                                "sensor.one_a2003_steps_sensor",
+                                "sensor.one_a2003_storage_sensor",
+                                "sensor.one_a2003_volume_level_alarm",
+                                "sensor.one_a2003_volume_level_call",
+                                "sensor.one_a2003_volume_level_music",
+                                "sensor.one_a2003_volume_level_ringer",
+                                "sensor.one_a2003_wifi_bssid",
+                                "sensor.one_a2003_wifi_connection",
+                                "sensor.one_a2003_wifi_frequency",
+                                "sensor.one_a2003_wifi_ip_address",
+                                "sensor.one_a2003_wifi_link_speed",
+                                "binary_sensor.one_a2003_wifi_state"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "path": "other",
+                    "title": "Other",
+                    "visible": [
+                        {
+                            "user": "9673c8154e4a42279a49df72fc4b776e"
+                        }
+                    ],
+                    "icon": "mdi:asterisk",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "vertical-stack",
+                            "cards": [
+                                {
+                                    "type": "glance",
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.a0"
+                                        },
+                                        {
+                                            "entity": "sensor.a1"
+                                        },
+                                        {
+                                            "entity": "sensor.a2"
+                                        },
+                                        {
+                                            "entity": "sensor.a3"
+                                        },
+                                        {
+                                            "entity": "sensor.a4"
+                                        },
+                                        {
+                                            "entity": "sensor.a5"
+                                        }
+                                    ],
+                                    "columns": 3,
+                                    "state_color": true,
+                                    "show_state": true,
+                                    "show_icon": true,
+                                    "show_name": true,
+                                    "title": "Arduino"
+                                },
+                                {
+                                    "type": "horizontal-stack",
+                                    "cards": [
+                                        {
+                                            "type": "entities",
+                                            "entities": [
+                                                {
+                                                    "entity": "light.red"
+                                                },
+                                                {
+                                                    "entity": "light.green"
+                                                },
+                                                {
+                                                    "entity": "light.blue"
+                                                },
+                                                {
+                                                    "entity": "switch.board_light"
+                                                },
+                                                {
+                                                    "entity": "binary_sensor.ir"
+                                                }
+                                            ],
+                                            "show_header_toggle": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.steam_76561198002545404"
+                                },
+                                {
+                                    "entity": "person.josh"
+                                },
+                                {
+                                    "entity": "input_boolean.alarm_system"
+                                }
+                            ],
+                            "type": "glance"
+                        },
+                        {
+                            "columns": 3,
+                            "entities": [
+                                {
+                                    "entity": "sensor.transmission_status"
+                                },
+                                {
+                                    "entity": "sensor.transmission_down_speed"
+                                },
+                                {
+                                    "entity": "sensor.transmission_up_speed"
+                                }
+                            ],
+                            "type": "glance",
+                            "title": "Transmission"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.pi_hole_ads_blocked_today"
+                                },
+                                {
+                                    "entity": "sensor.pi_hole_ads_percentage_blocked_today"
+                                },
+                                {
+                                    "entity": "sensor.pi_hole_dns_queries_cached"
+                                },
+                                {
+                                    "entity": "sensor.pi_hole_dns_queries_forwarded"
+                                },
+                                {
+                                    "entity": "sensor.pi_hole_dns_queries_today"
+                                },
+                                {
+                                    "entity": "sensor.pi_hole_dns_unique_clients"
+                                },
+                                {
+                                    "entity": "sensor.pi_hole_dns_unique_domains"
+                                },
+                                {
+                                    "entity": "sensor.pi_hole_domains_blocked"
+                                },
+                                {
+                                    "entity": "sensor.pi_hole_seen_clients"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Pi Hole",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.moon"
+                                },
+                                {
+                                    "entity": "sun.sun"
+                                }
+                            ],
+                            "show_name": false,
+                            "title": "Space",
+                            "type": "glance"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "sensor.ovo_last_gas_cost",
+                                "sensor.ovo_last_gas_reading"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

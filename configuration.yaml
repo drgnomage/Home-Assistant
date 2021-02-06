@@ -1,0 +1,213 @@
+default_config:
+
+homeassistant: !include homeassistant.yaml
+
+frontend:
+  themes: !include_dir_merge_named themes
+
+http: !include http.yaml
+
+mycroft:
+  host: 192.168.20.9
+
+recorder:
+  purge_keep_days: 7
+  include:
+    domains:
+       - light
+       - person
+       - switch
+    entity_globs:
+       - sensor.monitoring_*
+    entities:
+       - sensor.one_a2003_phone_state
+  exclude:
+    entities:
+      - sun.sun
+
+digital_ocean:
+  access_token: !secret DO_KEY
+
+wake_on_lan:
+
+tts:
+  - platform: google_translate
+
+pi_hole:
+  - host: 'rpi-docker.glitchbusters.info:8080'
+    name: Pi Hole
+    api_key: !secret pi_hole_api_key
+
+transmission:
+  - host: 'rpi-docker.glitchbusters.info'
+    port: 9090
+    name: Transmission
+    username: !secret TRANSMISSION_USERNAME
+    password: !secret TRANSMISSION_PASSWORD
+
+discovery:
+
+shopping_list:
+
+device_tracker:
+  - platform: luci
+    host: 192.168.20.1
+    username: !secret OPENWRT_USERNAME
+    password: !secret OPENWRT_PASSWORD
+
+tplink:
+  discovery: false
+  light:
+    - host: 192.168.20.40
+    - host: 192.168.20.41
+    - host: 192.168.20.42
+    - host: 192.168.20.45
+  switch:
+    - host: 192.168.20.20
+    - host: 192.168.20.21
+    - host: 192.168.20.22
+    - host: 192.168.20.25
+
+camera:
+  - platform: ffmpeg
+    input: !secret CAM1_URL2
+    name: Frontroom Cam
+
+binary_sensor:
+  - platform: ffmpeg_motion
+    input: !secret CAM1_URL2
+    name: Frontroom Cam Motion
+    changes: 15
+  - platform: ffmpeg_noise
+    input: !secret CAM1_URL1
+    name: Frontroom Cam Noise
+
+sensor:
+  - platform: time_date
+    display_options:
+      - 'time'
+      - 'date'
+      - 'date_time'
+      - 'date_time_utc'
+      - 'date_time_iso'
+      - 'time_date'
+      - 'time_utc'
+      - 'beat'
+  - platform: moon
+  - platform: steam_online
+    api_key: 35E27ACE75F5E28623F6B30C7A4957E5
+    accounts:
+      - 76561198002545404
+  - platform: template
+    sensors:
+      alarm_time:
+        friendly_name: 'Time'
+        value_template: '{{ states.input_number.alarmhour.state }}:{% if states.input_number.alarmminutes.state|length == 1 %}0{% endif %}{{ states.input_number.alarmminutes.state }}'
+  - platform: template
+    sensors:
+      monitoring_amps:
+        friendly_name_template: "{{ state_attr('switch.monitoring','friendly_name') }} Current"
+        value_template: "{{ state_attr('switch.monitoring','current_a') | float }}"
+        unit_of_measurement: 'A'
+      monitoring_watts:
+        friendly_name_template: "{{ state_attr('switch.monitoring','friendly_name') }} Current Consumption"
+        value_template: "{{ state_attr('switch.monitoring','current_power_w') | float }}"
+        unit_of_measurement: 'W'
+      monitoring_total_kwh:
+        friendly_name_template: "{{ state_attr('switch.monitoring','friendly_name') }} Total Consumption"
+        value_template: "{{ state_attr('switch.monitoring','total_energy_kwh') | float }}"
+        unit_of_measurement: 'kWh'
+      monitoring_volts:
+        friendly_name_template: "{{ state_attr('switch.monitoring','friendly_name') }} Voltage"
+        value_template: "{{ state_attr('switch.monitoring','voltage') | float }}"
+        unit_of_measurement: 'V'
+      monitoring_today_kwh:
+        friendly_name_template: "{{ state_attr('switch.monitoring','friendly_name') }} Today's Consumption"
+        value_template: "{{ state_attr('switch.monitoring','today_energy_kwh') | float }}"
+        unit_of_measurement: 'kWh'
+
+notify:
+  - name: Tootmachine
+    platform: mastodon
+    access_token: !secret mastodon_access_token
+    client_id: !secret mastodon_client_id
+    client_secret: !secret mastodon_client_secret
+    base_url: https://social.librem.one
+  - platform: mycroft
+    name: mycroft
+  - platform: telegram
+    name: Glitchbusters Notification Bot
+    chat_id: !secret telegram_chat_id
+
+switch:
+  - platform: digital_ocean
+    droplets:
+      - 'Oppenheimer'
+  - platform: mqtt
+    icon: mdi:flash
+    name: "Sonoff1"
+    command_topic: "sonoff01/cmnd/POWER"
+    state_topic: "sonoff01/stat/POWER"
+    qos: 0
+    payload_on: "ON"
+    payload_off: "OFF"
+    retain: true
+
+light:
+  - platform: group
+    name: Frontroom Lights
+    entities:
+      - light.frontroom_1
+      - light.frontroom_2
+  - platform: group
+    name: Bedroom Lights
+    entities:
+      - light.bedroomlamp_01
+
+input_boolean:
+  pi_radio:
+    name: Pi Radio
+    icon: mdi:radio
+  alarmstatus:
+    name: Wake Me Up
+    initial: off
+    icon: mdi:alarm-check
+  alarmweekday:
+    name: Weekdays Only
+    initial: off
+    icon: mdi:calendar
+
+input_number:
+  alarmhour:
+    name: Hour
+    icon: mdi:timer
+    initial: 9
+    min: 0
+    max: 23
+    step: 1
+  alarmminutes:
+    name: Minutes
+    icon: mdi:timer
+    initial: 0
+    min: 0
+    max: 55
+    step: 5
+
+input_datetime:
+  next_alarm_oneplustwo:
+    name: Alarm Oneplus Two
+    has_date: true
+    has_time: true
+
+telegram_bot:
+  - platform: polling
+    api_key: !secret telegram_bot_api
+    allowed_chat_ids:
+      - !secret telegram_chat_id
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+shell_command: !include commands.yaml
+firmata: !include firmata.yaml

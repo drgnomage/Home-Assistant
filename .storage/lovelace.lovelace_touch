@@ -1,0 +1,160 @@
+{
+    "version": 1,
+    "key": "lovelace.lovelace_touch",
+    "data": {
+        "config": {
+            "views": [
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "elements": [
+                                {
+                                    "entity": "switch.tv",
+                                    "style": {
+                                        "left": "36.5%",
+                                        "top": "88%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "switch.spare",
+                                    "style": {
+                                        "left": "30%",
+                                        "top": "88%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "switch.alarm",
+                                    "style": {
+                                        "left": "88%",
+                                        "top": "18%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "light.frontroom_lights",
+                                    "style": {
+                                        "left": "70%",
+                                        "top": "18%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "light.bedroom_lights",
+                                    "style": {
+                                        "left": "43%",
+                                        "top": "70%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "light.bedroomlamp_02",
+                                    "style": {
+                                        "left": "34%",
+                                        "top": "20%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "entity": "light.hallway_light",
+                                    "style": {
+                                        "left": "84%",
+                                        "top": "65%"
+                                    },
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "type": "state-icon"
+                                },
+                                {
+                                    "service": "scene.turn_on",
+                                    "service_data": {
+                                        "entity_id": "scene.movie_mode"
+                                    },
+                                    "style": {
+                                        "left": "12%",
+                                        "top": "32%"
+                                    },
+                                    "title": "Movie Mode",
+                                    "type": "service-button"
+                                },
+                                {
+                                    "service": "scene.turn_on",
+                                    "service_data": {
+                                        "entity_id": "scene.lights_quarter"
+                                    },
+                                    "style": {
+                                        "left": "12%",
+                                        "top": "40%"
+                                    },
+                                    "title": "Lights 25%",
+                                    "type": "service-button"
+                                },
+                                {
+                                    "service": "scene.turn_on",
+                                    "service_data": {
+                                        "entity_id": "scene.lights_half"
+                                    },
+                                    "style": {
+                                        "left": "12%",
+                                        "top": "48%"
+                                    },
+                                    "title": "Lights 50%",
+                                    "type": "service-button"
+                                },
+                                {
+                                    "service": "scene.turn_on",
+                                    "service_data": {
+                                        "entity_id": "scene.bedtime"
+                                    },
+                                    "style": {
+                                        "left": "12%",
+                                        "top": "56%"
+                                    },
+                                    "title": "Bed Time",
+                                    "type": "service-button"
+                                },
+                                {
+                                    "service": "scene.turn_on",
+                                    "service_data": {
+                                        "entity_id": "scene.night"
+                                    },
+                                    "style": {
+                                        "left": "12%",
+                                        "top": "64%"
+                                    },
+                                    "title": "Night Time",
+                                    "type": "service-button"
+                                }
+                            ],
+                            "image": "/local/floorplan_dark.png",
+                            "type": "picture-elements"
+                        }
+                    ],
+                    "path": "home",
+                    "title": "Home"
+                }
+            ]
+        }
+    }
+}

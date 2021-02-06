@@ -1,0 +1,2 @@
+  morning_alarm: echo "ssh pi@picroft.glitchbusters.info \"/home/pi/morning.sh\"" > /config/command_input
+  morning_alarm_stop: echo "ssh pi@picroft.glitchbusters.info \"/home/pi/morning_stop.sh\"" > /config/command_input

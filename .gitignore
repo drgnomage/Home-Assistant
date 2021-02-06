@@ -1,0 +1,14 @@
+
+.storage/core.config_entries
+.storage/core.restore_state
+
+secrets.yaml
+known_devices.yaml
+
+home-assistant.log
+home-assistant_v2.db
+
+tts/*
+
+command_input
+

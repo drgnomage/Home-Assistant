@@ -1,0 +1,17 @@
+{
+    "data": {
+        "items": [
+            {
+                "device_trackers": [
+                    "device_tracker.nexus_5x",
+                    "device_tracker.one_a2003"
+                ],
+                "id": "josh",
+                "name": "josh",
+                "user_id": "9673c8154e4a42279a49df72fc4b776e"
+            }
+        ]
+    },
+    "key": "person",
+    "version": 2
+}

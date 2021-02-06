@@ -1,0 +1,316 @@
+{
+    "version": 1,
+    "key": "auth",
+    "data": {
+        "users": [
+            {
+                "id": "9673c8154e4a42279a49df72fc4b776e",
+                "group_ids": [
+                    "system-admin"
+                ],
+                "is_owner": true,
+                "is_active": true,
+                "name": "josh",
+                "system_generated": false
+            },
+            {
+                "id": "e2207f4460f34325b9469dc10deb5472",
+                "group_ids": [
+                    "system-users"
+                ],
+                "is_owner": false,
+                "is_active": true,
+                "name": "Guest",
+                "system_generated": false
+            }
+        ],
+        "groups": [
+            {
+                "id": "system-admin",
+                "name": "Administrators"
+            },
+            {
+                "id": "system-users",
+                "name": "Users"
+            },
+            {
+                "id": "system-read-only",
+                "name": "Read Only"
+            }
+        ],
+        "credentials": [
+            {
+                "id": "36acfa7e8c7143699c238c213a6e243e",
+                "user_id": "9673c8154e4a42279a49df72fc4b776e",
+                "auth_provider_type": "homeassistant",
+                "auth_provider_id": null,
+                "data": {
+                    "username": "josh"
+                }
+            },
+            {
+                "id": "41a91c8825c74475b61d8b50b4fc5dea",
+                "user_id": "e2207f4460f34325b9469dc10deb5472",
+                "auth_provider_type": "homeassistant",
+                "auth_provider_id": null,
+                "data": {
+                    "username": "guest"
+                }
+            }
+        ],
+        "refresh_tokens": [
+            {
+                "id": "618f48383c574ef8934155ec2a3fe41e",
+                "user_id": "9673c8154e4a42279a49df72fc4b776e",
+                "client_id": null,
+                "client_name": "Node Red",
+                "client_icon": null,
+                "token_type": "long_lived_access_token",
+                "created_at": "2020-03-03T23:48:25.941852+00:00",
+                "access_token_expiration": 315360000.0,
+                "token": "71db5b04ac338ba328459dfa2eb0db98626ce5920d4644506c408b51d6949b4a91f8d8070d501cb5feda5223d0f11fdf6fa690d03aaf0ff9f2a25e111def75e4",
+                "jwt_key": "b1520c02d8dab6370924e2a60393a794acd7f31a90faf84f7a19104ba5b3884c8bd7c5f51982e9e8c0a7106ada686bffc68c5f19afdb205c891cff379ef884c0",
+                "last_used_at": "2020-03-03T23:48:25.942012+00:00",
+                "last_used_ip": null
+            },
+            {
+                "id": "af8bdacce5204e39a7ba98541fa28153",
+                "user_id": "9673c8154e4a42279a49df72fc4b776e",
+                "client_id": null,
+                "client_name": "Home Slide",
+                "client_icon": null,
+                "token_type": "long_lived_access_token",
+                "created_at": "2020-05-18T16:39:51.699627+00:00",
+                "access_token_expiration": 315360000.0,
+                "token": "481dce957ba0f0cbcf83c65cb2fe7c092398572f91e023f5fc0febc61a0b9af0ff0272fad07594053d31ff558add87b03433e8cbee06c0e72de74fc3ce0c9714",
+                "jwt_key": "fc5a748d374aebd50a06ef9c6603dcc97968d6a2dbeaa9b20dc78d052d679099272d24fd39567dde6a7f1effb08d7072cd949027ff85844b4594c05a926c769f",
+                "last_used_at": "2020-05-18T16:39:51.699812+00:00",
+                "last_used_ip": null
+            },
+            {
+                "id": "af530f8faf954eaab7c0d236484c6087",
+                "user_id": "9673c8154e4a42279a49df72fc4b776e",
+                "client_id": "https://home-assistant.io/android",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-06-21T17:33:10.879819+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "637b5f0a9f98d3af1f9254e8c8e8d30c9993e7e313a543fdbb7419627cf9aaceccac36d8801549781156b1c025ae5047550cc426ba5903e6a53f0de9c5aab657",
+                "jwt_key": "4a728f79be7887b0a3dca63e21a6471dc1515a62e60942f78364881d87805a0d2d947b32e07b7489fdfe352a2b149fe2280057f672aa8496eed9904cbe4934e6",
+                "last_used_at": "2021-02-06T08:00:14.429335+00:00",
+                "last_used_ip": "127.0.0.1"
+            },
+            {
+                "id": "e4510f387bd8466199d96acc54043b44",
+                "user_id": "9673c8154e4a42279a49df72fc4b776e",
+                "client_id": null,
+                "client_name": "Kindle",
+                "client_icon": null,
+                "token_type": "long_lived_access_token",
+                "created_at": "2020-06-22T08:06:44.378021+00:00",
+                "access_token_expiration": 315360000.0,
+                "token": "085d63ec346d46bd076345d1e820f693a6d627c63d232d056183b16f28f60ecd7d730aac4a602a0a462cec714afb7e727c6ae434df10f4c575ee3d5bc83c807c",
+                "jwt_key": "70046851894c1e956b76c257f0ad3b518b921ea123b71d2489701e42af7f596070eae362851aed943f4d65f7b3c64e802d621be32beb4d238593b31998276484",
+                "last_used_at": "2020-06-22T08:06:44.378219+00:00",
+                "last_used_ip": null
+            },
+            {
+                "id": "0d6adab6991341068090f96150a6cedd",
+                "user_id": "9673c8154e4a42279a49df72fc4b776e",
+                "client_id": "https://rpi-docker.glitchbusters.info/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-07-15T10:12:52.651819+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "44817794f4de6f16a97741cdb2a240ecf00609eb8ae4861108f1d872403869ab4327ed71c9d90896fa49ac28785f1e8e7a26698c28468bf7a21a8764bd14dbae",
+                "jwt_key": "65cf17b548beeb8897f3bbbb51ff60d1f568205f027226752222050b65e8d557abfd073a0f67eddf3ffd0f1871c9ae2a6593a01d586b9a2152fb64b32dc75c2c",
+                "last_used_at": "2020-12-18T08:34:54.993230+00:00",
+                "last_used_ip": "127.0.0.1"
+            },
+            {
+                "id": "2bd45d4c8046498a9b30f442ec40aa0d",
+                "user_id": "9673c8154e4a42279a49df72fc4b776e",
+                "client_id": "https://rpi-docker.glitchbusters.info/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-07-23T12:19:12.464672+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "af4751d736f71ffed01a8eb6edbf6acc3002b4583eea760c1aed5246e91c7f1648df421f73086ae390bacfe90ce12758db1eee4ca53f167a68686ace98a9b277",
+                "jwt_key": "456dbbf9c8bccd5edf1cb18ea128218a6971c162f0e9f151956f19f462572ca037543a4ec5d40fb3fe02129900adcc427a977a5e874845a92833a7dd01091068",
+                "last_used_at": "2021-02-05T20:04:40.178469+00:00",
+                "last_used_ip": "127.0.0.1"
+            },
+            {
+                "id": "908e90e50bab466fb2322985eb68477c",
+                "user_id": "9673c8154e4a42279a49df72fc4b776e",
+                "client_id": null,
+                "client_name": "HassAlarm",
+                "client_icon": null,
+                "token_type": "long_lived_access_token",
+                "created_at": "2020-08-14T07:15:10.706166+00:00",
+                "access_token_expiration": 315360000.0,
+                "token": "97c1c3e56919cf73c5c38f1d9ba548feed040cd963dc2bab26aae1b9bf888661e8249ede580b61d7d7d7c63bf8d885c54e6c0167157754a8c1d1d9fb3a304767",
+                "jwt_key": "ab521f0d3e04587ff93b23cd9326403a6dbe34a219db7946d02a3ab33bc0603c72e5fc064793b52161dbcadefd226271c0988b1ccaf22c2fc6c6a9a6e3da8fb8",
+                "last_used_at": "2020-08-14T07:15:10.706609+00:00",
+                "last_used_ip": null
+            },
+            {
+                "id": "3d5a58f3e0874933bc7bea4b26579b4f",
+                "user_id": "9673c8154e4a42279a49df72fc4b776e",
+                "client_id": "https://rpi-docker.glitchbusters.info/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-10-08T21:02:30.546338+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "54a5cc273347dda3f53553d9dbc2c94cfaa209ba54cafa29025357850a3f8203af646ecc35c2434069835024f9cc73673991d9e8182568b9e90d1c486ede37f1",
+                "jwt_key": "e5fcd1cc4445604d29e16aba4babb904a66ab14938c5de0abac4f355bff94d2bf6504143baa91c0c8ff7c027157b358a00fb1e2fd4d496c0b1ab4cc1fca328a8",
+                "last_used_at": "2020-11-26T07:59:51.637679+00:00",
+                "last_used_ip": "127.0.0.1"
+            },
+            {
+                "id": "f710b895340b4034a5bba4621501df27",
+                "user_id": "9673c8154e4a42279a49df72fc4b776e",
+                "client_id": "https://rpi-docker.glitchbusters.info/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-10-23T22:08:50.229201+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "ee577a7a46ea2e7925bb0e2a3ff945c345f83b7da50aaee89b2ebc9f64380128d7f4ccbff15d408487c085975f19a300e4f72791cf643c2d3d860ccc75fff9c3",
+                "jwt_key": "85d87a8da08d2c5746c9882a6802a626c90467fe604e9c3ef83fe2795bac3d1296ac33f71fea9563fb2d3f8efdb7eaaa3f9f231abd633fb10c5d327dcf523ae3",
+                "last_used_at": "2020-12-07T07:42:39.274117+00:00",
+                "last_used_ip": "127.0.0.1"
+            },
+            {
+                "id": "246d39fdc88841bdb464f276a00eec6e",
+                "user_id": "9673c8154e4a42279a49df72fc4b776e",
+                "client_id": null,
+                "client_name": "HASS-CLI",
+                "client_icon": null,
+                "token_type": "long_lived_access_token",
+                "created_at": "2020-10-30T09:40:40.506983+00:00",
+                "access_token_expiration": 315360000.0,
+                "token": "a4a8e160643033776a4d3a6ffa8ce4635cf860220f2993f6cc3e495b68ac6a1fab3fa370e6a3108070b789ff3de9e2ac0a3e9a22da048c5c4e6df7316a9efef0",
+                "jwt_key": "d8133ad8fca7803e0d8f824eb4b2f7c95faf9d53daa8c5030cb71bc4b42e4e87c503e7b13e91c8c36cc3377aa966cd89badd2f0fb8559c37dee0b4b3f68139c1",
+                "last_used_at": "2020-10-30T09:40:40.507650+00:00",
+                "last_used_ip": null
+            },
+            {
+                "id": "d86a23889958473cbaccec885121ad9b",
+                "user_id": "9673c8154e4a42279a49df72fc4b776e",
+                "client_id": "https://rpi-docker.glitchbusters.info/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-11-05T20:53:49.307052+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "586d88e6fdc45e2e47d098879e2ef88409bf00af27f13fb3378170cb80b39c6cd7cd27d1068e285abf0284ba58cb0fc4b4b62e98a43a2dd7ab10f783d46dc151",
+                "jwt_key": "a814bc18753a8f733e62c6cc56801541cdee28930e58a156f98b6737fa837550fa3f673e80901decd151461134ff5bbf3269e233ac0cb0ec476ee95c5e1f496d",
+                "last_used_at": "2020-12-16T18:15:26.450632+00:00",
+                "last_used_ip": "127.0.0.1"
+            },
+            {
+                "id": "7fe5ba7e4681474a8a04cc57bc097c5b",
+                "user_id": "9673c8154e4a42279a49df72fc4b776e",
+                "client_id": "https://rpi-docker.glitchbusters.info/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-11-08T20:39:05.802126+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "aac1e699a2cd67b85d99a9d2d76d74a130cbb7b7893f256367d89f5fac55c941455c7d0a16aafaf93ba0df8ac6dd309b2d07b1ba55060695a46f828851695dd4",
+                "jwt_key": "4b1a2abe5accd77e255afdf8355bbf88439dcfc887f27c3fde37663a73d4164fb9e021fae1b076699f97c98b1f4ae9c83a7d2235200aff27c2f2a16696f02649",
+                "last_used_at": "2021-01-01T17:37:23.249326+00:00",
+                "last_used_ip": "127.0.0.1"
+            },
+            {
+                "id": "3b32e822514e42108e97dc3adc50bcc7",
+                "user_id": "9673c8154e4a42279a49df72fc4b776e",
+                "client_id": "https://rpi-docker.glitchbusters.info/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-12-05T11:14:28.410000+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "26942babfc7cd8f338724adf9921254bf2dad04b0d9a720066bfb46935f7de5d634193dc05613890a694552074873e28fa924b17a6c4b2b0ebb3dedc60183e7d",
+                "jwt_key": "d0719d3829e5b603e897b2cd1cf9b651137dfc005c14f09dca698a407d2e9d9dcac1aee02179767878ce6e9e0a793697bce701b9af6b6e58d3b266d6dcaa63a8",
+                "last_used_at": "2021-01-04T20:46:23.876003+00:00",
+                "last_used_ip": "127.0.0.1"
+            },
+            {
+                "id": "7256f5ddcf0548d3acde4a86c1f33d60",
+                "user_id": "9673c8154e4a42279a49df72fc4b776e",
+                "client_id": "https://rpi-docker.glitchbusters.info/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-12-18T07:53:19.157136+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "c49057873b1ee20ecad35d0e423845d6df7b1647bd95f1eb6343b3880353498ddb66b6fa4ae4b1c121a3f858fb61307056c9fe747ade865776d6477b56b03764",
+                "jwt_key": "1f7c45b00b470ddd75ba333849bcd8a904d3e83b10c03a3880c33befdc96177d475caa3ad4b7b253c2f769cd02c3e3f72daa1be3e8bc46e29187658e31cab345",
+                "last_used_at": "2021-01-25T23:19:36.346955+00:00",
+                "last_used_ip": "127.0.0.1"
+            },
+            {
+                "id": "e55524e86254481da44f3ba78d63b82f",
+                "user_id": "9673c8154e4a42279a49df72fc4b776e",
+                "client_id": null,
+                "client_name": "Mycroft",
+                "client_icon": null,
+                "token_type": "long_lived_access_token",
+                "created_at": "2021-01-24T22:43:24.234968+00:00",
+                "access_token_expiration": 315360000.0,
+                "token": "f8fbe1980caa612cac0eaf3ba0e7ed0eddfbf804845d470d4d27927a30cfb40794aa4b66595dcbca0424cf7a3c8a1fccd3c5d9e02820115c62b13948232d270a",
+                "jwt_key": "2ca94e8f2cad6c8dd4a5c649591680764162b3c125ae654a69a220ca87b0e99866868138c04cd754748ebf5432bf9ca17feb9ef746bf8b24184dd7e912bb6ac7",
+                "last_used_at": "2021-01-24T22:43:24.235510+00:00",
+                "last_used_ip": null
+            },
+            {
+                "id": "4ec33f2a3ab049d0ac4423364f5def18",
+                "user_id": "9673c8154e4a42279a49df72fc4b776e",
+                "client_id": "https://rpi-docker.glitchbusters.info/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2021-02-01T08:00:50.070804+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "43a245ef76cd42c08380c9fb0cbdf796c428617ccacc0d39cf0bd78c23ce5e2bb574d22b0ad949080849c0d7b5ecddc71961c5858dd915e40e07202ee4e15c5b",
+                "jwt_key": "b8247ed14ede53d080a30c86988344eade534a65e9a169cd3c927e04db5a7ea210d3bb6857074043ab08eddf65c7c5da8ee5a78898fc4805c6ab520da6922c43",
+                "last_used_at": "2021-02-06T08:14:51.656691+00:00",
+                "last_used_ip": "127.0.0.1"
+            },
+            {
+                "id": "4e61539ff6c942669dfc36d3097d1e6d",
+                "user_id": "e2207f4460f34325b9469dc10deb5472",
+                "client_id": "https://rpi-docker.glitchbusters.info:8123/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-05-20T16:06:20.851303+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "d63c5ab89b61c88f24caa58cbdace9b0757fe03e68f0374fffc821c4f8f0d896ec4da9ad3bc9790745c99fd4da29bfc4ec7c47f37b104691d65082a6bb4da50f",
+                "jwt_key": "187372cbd6e80a4388b7a28c02fe2be3fbccd1d0b4b9aaed693d10ea784f4be12dc7e49f96faac644a979a76aca7ec00bcaa22253b1d02271ba14fa4d0e69cae",
+                "last_used_at": "2020-05-20T16:06:20.852227+00:00",
+                "last_used_ip": "192.168.2.54"
+            },
+            {
+                "id": "c90c85ff4bdc4999a34126a68c598e67",
+                "user_id": "e2207f4460f34325b9469dc10deb5472",
+                "client_id": "https://rpi-docker.glitchbusters.info:8123/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2020-05-20T16:29:55.013611+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "be5340b4ebedaccbbdeea26fcf59eabd8dfdb70474bb066b8cd7babccf90b9ea262e3c4b2f1106386cc2d1f163cc74595763cb5e77a7466e9677c5dabe0cbc89",
+                "jwt_key": "74423940ec3724036de80ce9f52b9f4f31e8174ce3a9a92bd8cfc3a49b7c71433f6f0a7f8326207524fb715d1aedf2e5960d552f44744da686f8e622e424ab36",
+                "last_used_at": "2020-05-20T16:29:55.013817+00:00",
+                "last_used_ip": "192.168.3.158"
+            }
+        ]
+    }
+}

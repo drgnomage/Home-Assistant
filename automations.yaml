@@ -1,0 +1,51 @@
+- id: '1589990688015'
+  alias: Set Theme on Boot
+  description: ''
+  trigger:
+  - event: start
+    platform: homeassistant
+  condition: []
+  action:
+  - data:
+      name: dark
+    service: frontend.set_theme
+- id: '1600791988931'
+  alias: Frontroom Motion
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.frontroom_cam_noise
+    to: 'on'
+    for: 00:00:15
+    from: test
+  - platform: state
+    entity_id: binary_sensor.frontroom_cam_motion
+    to: 'on'
+    for: 00:00:03
+  condition: []
+  action:
+  - scene: scene.lights_quarter
+  - delay: 00:20:00
+  - service: scene.turn_on
+    data: {}
+    entity_id: scene.night
+  mode: restart
+- id: '1609686947132'
+  alias: Washing Done
+  description: ''
+  trigger:
+  - platform: numeric_state
+    entity_id: sensor.monitoring_watts
+    for: 00:00:05
+    above: '100'
+  condition: []
+  action:
+  - wait_for_trigger:
+    - platform: numeric_state
+      entity_id: sensor.monitoring_watts
+      below: '10'
+      for: 00:02:00
+  - service: notify.glitchbusters_notification_bot
+    data:
+      message: Washing is done!
+  mode: single

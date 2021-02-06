@@ -1,0 +1,51 @@
+  - serial_port: /dev/ttyACM0
+    serial_baud_rate: 57600
+    switches:
+      - name: Alarm
+        pin_mode: OUTPUT
+        pin: 4
+      - name: Board Light
+        pin_mode: OUTPUT
+        pin: 13
+    lights:
+      - name: Red
+        pin_mode: PWM
+        pin: 9
+        initial: 0
+      - name: Green
+        pin_mode: PWM
+        pin: 10
+        initial: 0
+      - name: Blue
+        pin_mode: PWM
+        pin: 11
+        initial: 0
+    binary_sensors:
+      - name: IR
+        pin_mode: INPUT
+        pin: 2
+    sensors:
+      - name: A0
+        pin: A0
+        pin_mode: ANALOG
+        differential: 50
+      - name: A1
+        pin: A1
+        pin_mode: ANALOG
+        differential: 50
+      - name: A2
+        pin: A2
+        pin_mode: ANALOG
+        differential: 50
+      - name: A3
+        pin: A3
+        pin_mode: ANALOG
+        differential: 50
+      - name: A4
+        pin: A4
+        pin_mode: ANALOG
+        differential: 50
+      - name: A5
+        pin: A5
+        pin_mode: ANALOG
+        differential: 50

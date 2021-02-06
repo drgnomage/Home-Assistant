@@ -1,0 +1,12 @@
+{
+    "data": {
+        "camera.ffmpeg": {
+            "preload_stream": true
+        },
+        "camera.frontroom_cam": {
+            "preload_stream": true
+        }
+    },
+    "key": "camera",
+    "version": 1
+}
